@@ -1,0 +1,82 @@
+ html body{
+     height: 100%;
+     margin: 0;
+     padding: 0;
+ }
+ .carousel{
+     max-width: 1000px;
+     margin: 0 auto;
+ }
+ 
+ .slider_container{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+ }
+
+ .images_container{
+    flex-direction: row;
+    overflow: hidden;
+    width: 700px;
+    height: 500px;
+ 
+}
+
+.imagediv{
+    position: relative;
+    /* transition: 2s; */
+}
+
+ h3{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    z-index: 10;
+}
+
+.imagediv > img{
+    width: 700px;
+    height: 500px;
+    object-fit: cover;
+} 
+
+.sliderbuttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.buttons{
+   
+}
+
+ a{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: darkgray;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.6s ease;
+}
+
+.image{
+    -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+
